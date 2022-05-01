@@ -45,6 +45,10 @@ import {
 } from '@coreui/angular';
 
 import { IconModule, IconSetService } from '@coreui/icons-angular';
+import { AuthService } from 'src/services/auth.service';
+import { ApiService } from 'src/services/api.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { PagesModule } from './views/pages/pages.module';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
@@ -85,6 +89,9 @@ const APP_CONTAINERS = [
     BadgeModule,
     ListGroupModule,
     CardModule,
+    BrowserModule,
+    HttpClientModule,
+    PagesModule
   ],
   providers: [
     {
@@ -96,7 +103,9 @@ const APP_CONTAINERS = [
       useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG,
     },
     IconSetService,
-    Title
+    Title,
+    ApiService,
+    AuthService
   ],
   bootstrap: [AppComponent],
 })

@@ -9,6 +9,8 @@ import { Page500Component } from './page500/page500.component';
 import { ButtonModule, CardModule, FormModule, GridModule } from '@coreui/angular';
 import { IconModule } from '@coreui/icons-angular';
 
+import { UserService } from '../../../services/user.service';
+
 
 @NgModule({
   declarations: [
@@ -25,6 +27,9 @@ import { IconModule } from '@coreui/icons-angular';
     GridModule,
     IconModule,
     FormModule
+  ],
+  providers: [
+    UserService
   ]
 })
 export class PagesModule {

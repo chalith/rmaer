@@ -11,26 +11,32 @@
                 <span cInputGroupText>
                   <svg cIcon name="cilUser"></svg>
                 </span>
-                <input autoComplete="name" cFormControl placeholder="Username" />
+                <input autoComplete="fname" cFormControl placeholder="First Name" [value]="userDto.firstName"/>
+              </c-input-group>
+              <c-input-group class="mb-3">
+                <span cInputGroupText>
+                  <svg cIcon name="cilUser"></svg>
+                </span>
+                <input autoComplete="lname" cFormControl placeholder="Last Name" [value]="userDto.lastName"/>
               </c-input-group>
               <c-input-group class="mb-3">
                 <span cInputGroupText>@</span>
-                <input autoComplete="email" cFormControl placeholder="Email" />
+                <input autoComplete="email" cFormControl placeholder="Email" [value]="userDto.email"/>
               </c-input-group>
               <c-input-group class="mb-3">
                 <span cInputGroupText>
                   <svg cIcon name="cilLockLocked"></svg>
                 </span>
-                <input autoComplete="new-password" cFormControl placeholder="Password" type="password" />
+                <input autoComplete="new-password" cFormControl placeholder="Password" type="password" [value]="userDto.password"/>
               </c-input-group>
               <c-input-group class="mb-4">
                 <span cInputGroupText>
                   <svg cIcon name="cilLockLocked"></svg>
                 </span>
-                <input autoComplete="new-password" cFormControl placeholder="Repeat password" type="password" />
+                <input autoComplete="new-password" cFormControl placeholder="Repeat password" type="password" [value]="retypePassword" />
               </c-input-group>
               <div class="d-grid">
-                <button cButton color="primary">Create Account</button>
+                <button cButton color="primary" (click)="submit()">Create Account</button>
               </div>
             </form>
           </c-card-body>
