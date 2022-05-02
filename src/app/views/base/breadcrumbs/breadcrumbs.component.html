@@ -1,93 +1,54 @@
 <div class="fade-in">
   <c-row ngPreserveWhitespaces>
-    <c-col xs="12">
-      <app-docs-callout href="components/breadcrumb" name="Breadcrumb"></app-docs-callout>
+    <c-col class="mb-4" xs="12">
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button cButton color="primary" variant="outline" class="float-right">Add New Category</button>
+        </div>  
     </c-col>
     <c-col class="mb-4" xs="12">
       <c-card>
         <c-card-header>
-          <strong>Angular Breadcrumbs</strong>
+          <strong>Award Categories</strong>
         </c-card-header>
         <c-card-body>
-          <p class="text-medium-emphasis small">
-            The breadcrumb navigation provides links back to each previous page the user navigated
-            through and shows the current location in a website or an application. You don’t have
-            to add separators, because they automatically added in CSS through
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::before">
-              <code>::before</code>
-            </a>
-            and
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/content">
-              <code>content</code>
-            </a>
-            .
-          </p>
-          <app-docs-example href="components/breadcrumb">
-            <c-breadcrumb class="mb-2">
-              <c-breadcrumb-item *ngFor="let item of items; index as i; last as isLast"
-                                 [active]="isLast"
-                                 [url]="item.url">
-                {{item.label}}
-              </c-breadcrumb-item>
-            </c-breadcrumb>
-            <hr>
-            <c-breadcrumb class="mb-2">
-              <c-breadcrumb-item *ngFor="let item of items.slice(0,1); index as i; last as isLast"
-                                 [active]="isLast"
-                                 [url]="item.url">
-                {{item.label}}
-              </c-breadcrumb-item>
-            </c-breadcrumb>
-            <c-breadcrumb class="mb-2">
-              <c-breadcrumb-item *ngFor="let item of items.slice(0,2); index as i; last as isLast"
-                                 [active]="isLast"
-                                 [url]="item.url">
-                {{item.label}}
-              </c-breadcrumb-item>
-            </c-breadcrumb>
-            <c-breadcrumb class="mb-2">
-              <c-breadcrumb-item *ngFor="let item of items.slice(0,3); index as i; last as isLast"
-                                 [active]="isLast"
-                                 [url]="item.url">
-                {{item.label}}
-              </c-breadcrumb-item>
-            </c-breadcrumb>
-            <c-breadcrumb class="mb-2">
-              <c-breadcrumb-item *ngFor="let item of items.slice(0,4); index as i; last as isLast"
-                                 [active]="isLast"
-                                 [url]="item.url">
-                <span [ngClass]="{'mark': isLast}">{{item.label}}</span>
-              </c-breadcrumb-item>
-            </c-breadcrumb>
-            <hr>
-            <c-breadcrumb class="mb-0">
-              <c-breadcrumb-item url="/">
-                Home
-              </c-breadcrumb-item>
-              <c-breadcrumb-item url="/">
-                Library
-              </c-breadcrumb-item>
-              <c-breadcrumb-item url="/">
-                Data
-              </c-breadcrumb-item>
-              <c-breadcrumb-item [active]="true">
-                Bootstrap
-              </c-breadcrumb-item>
-            </c-breadcrumb>
-          </app-docs-example>
-        </c-card-body>
-      </c-card>
-    </c-col>
-    <c-col xs="12">
-      <c-card>
-        <c-card-header>
-          <strong>Angular Breadcrumbs</strong> <small>router</small>
-        </c-card-header>
-        <c-card-body>
-          <app-docs-example href="components/breadcrumb#router">
-            <c-breadcrumb-router></c-breadcrumb-router>
-            <c-breadcrumb-router [items]="items"></c-breadcrumb-router>
-          </app-docs-example>
+          <table [striped]="true" cTable>
+            <thead>
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Prefix</th>
+            <th scope="col">Limit of Submission</th>
+            <th scope="col">Start Date</th>
+            <th scope="col">End Date</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <th scope="row">1</th>
+            <td>Wild Life</td>
+            <td>WL</td>
+            <td>1000</td>
+            <td>03/05/2022</td>
+            <td>03/08/2022</td>
+            </tr>
+            <tr>
+            <th scope="row">2</th>
+            <td>Black & White</td>
+            <td>BW</td>
+            <td>2000</td>
+            <td>03/05/2022</td>
+            <td>03/08/2022</td>
+            </tr>
+            <tr>
+            <th scope="row">3</th>
+            <td>Landscape</td>
+            <td>L</td>
+            <td>5000</td>
+            <td>03/05/2022</td>
+            <td>03/08/2022</td>
+            </tr>
+            </tbody>
+            </table>
         </c-card-body>
       </c-card>
     </c-col>

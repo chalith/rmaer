@@ -10,6 +10,7 @@ import {
   FormModule,
   GridModule,
   ListGroupModule,
+  TableModule,
   SharedModule
 } from '@coreui/angular';
 
@@ -24,6 +25,8 @@ import { ChecksRadiosComponent } from './checks-radios/checks-radios.component';
 import { InputGroupsComponent } from './input-groups/input-groups.component';
 import { LayoutComponent } from './layout/layout.component';
 import { ValidationComponent } from './validation/validation.component';
+
+import { TablesComponent } from '../base/tables/tables.component';
 
 
 @NgModule({
@@ -52,6 +55,7 @@ import { ValidationComponent } from './validation/validation.component';
     ButtonGroupModule,
     DropdownModule,
     SharedModule,
+    TableModule,
     ListGroupModule
   ]
 })
