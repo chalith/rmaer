@@ -10,6 +10,7 @@ import { ButtonModule, CardModule, FormModule, GridModule } from '@coreui/angula
 import { IconModule } from '@coreui/icons-angular';
 
 import { UserService } from '../../../services/user.service';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { UserService } from '../../../services/user.service';
     ButtonModule,
     GridModule,
     IconModule,
-    FormModule
+    FormModule,
+    FormsModule
   ],
   providers: [
     UserService
