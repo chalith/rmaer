@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class ApiService {
 
-    private url = 'http://localhost:5069/';
+    private url = 'https://localhost:7104/';
     private jwt;
 
     constructor(private http: HttpClient) {

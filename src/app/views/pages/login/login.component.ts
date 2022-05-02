@@ -18,6 +18,9 @@ export class LoginComponent {
   }
 
   login() {
+    if (!this.loginDto.userName || !this.loginDto.password)
+      alert('Login info cannot be empty!');
+
     this.authService.login(this.loginDto).subscribe(data => {
       if (data) {
         localStorage.setItem('jwt', data.toString())
