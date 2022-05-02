@@ -1,7 +1,7 @@
 <c-row ngPreserveWhitespaces>
   <c-col class="mb-4" xs="12">
     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-      <button cButton color="primary" variant="outline" class="float-right">Add New</button>
+      <button cButton color="primary" variant="outline" class="float-right">Add New </button>
       </div>  
   </c-col>
   <c-col class="mb-4" xs="12">
@@ -10,41 +10,40 @@
         <strong>Manage Submissions</strong>
       </c-card-header>
       <c-card-body>
-        <table  cTable>
+        <table cTable>
           <thead>
           <tr>
-          <th scope="col">#</th>
-          <th scope="col">Name</th>
-          <th scope="col">Prefix</th>
-          <th scope="col">Limit of Submission</th>
-          <th scope="col">Start Date</th>
-          <th scope="col">End Date</th>
+          <th scope="col">Submission ID</th>
+          <th scope="col">Event ID</th>
+          <th scope="col">Category</th>        
+          <th scope="col">Date Submited</th>
+          <th scope="col">Action</th>
           </tr>
           </thead>
           <tbody>
           <tr>
-          <th scope="row">1</th>
-          <td>Wild Life</td>
+          <th scope="row">S001</th>
+          <td>E0001</td>
           <td>WL</td>
-          <td>1000</td>
-          <td>03/05/2022</td>
           <td>03/08/2022</td>
+          <td> <button cButton color="primary" variant="outline" class="float-right btn-sm">Edit </button>
+            <button cButton color="danger" variant="outline" class="float-right btn-sm">Delete </button> </td>
           </tr>
           <tr>
-          <th scope="row">2</th>
-          <td>Black & White</td>
-          <td>BW</td>
-          <td>2000</td>
-          <td>03/05/2022</td>
-          <td>03/08/2022</td>
+            <th scope="row">S002</th>
+            <td>E0001</td>
+            <td>BW</td>
+            <td>04/08/2022</td>
+            <td> <button cButton color="primary" variant="outline" class="float-right btn-sm">Edit </button>
+              <button cButton color="danger" variant="outline" class="float-right btn-sm">Delete </button>  </td>
           </tr>
           <tr>
-          <th scope="row">3</th>
-          <td>Landscape</td>
-          <td>L</td>
-          <td>5000</td>
-          <td>03/05/2022</td>
-          <td>03/08/2022</td>
+            <th scope="row">S003</th>
+            <td>E0002</td>
+            <td>L</td>
+            <td>05/08/2022</td>
+            <td> <button cButton color="primary" variant="outline" class="float-right btn-sm">Edit </button>
+              <button cButton color="danger" variant="outline" class="float-right btn-sm">Delete </button>  </td>
           </tr>
           </tbody>
           </table>
@@ -52,4 +51,3 @@
     </c-card>
   </c-col>
 </c-row>
-
