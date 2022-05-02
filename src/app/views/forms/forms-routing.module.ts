@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { FloatingLabelsComponent } from './floating-labels/floating-labels.component';
-import { FormControlsComponent } from './form-controls/form-controls.component';
 import { InputGroupsComponent } from './input-groups/input-groups.component';
 import { RangesComponent } from './ranges/ranges.component';
 import { SelectComponent } from './select/select.component';
@@ -20,13 +19,6 @@ const routes: Routes = [
       {
         path: '',
         redirectTo: 'form-control'
-      },
-      {
-        path: 'form-control',
-        component: FormControlsComponent,
-        data: {
-          title: 'Form Control'
-        }
       },
       {
         path: 'select',

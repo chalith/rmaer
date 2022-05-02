@@ -39,12 +39,12 @@ export const navItems: INavData[] = [
   },
   {
     name: 'Manage Submissions',
-    url: '/forms',
+    url: '/areas',
     iconComponent: { name: 'cil-notes' },
     children: [
       {
         name: 'Submissions',
-        url: '/forms/form-control'
+        url: '/areas/manage-submissions'
       }
     ]
   },

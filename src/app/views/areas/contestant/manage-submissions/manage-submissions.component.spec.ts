@@ -4,19 +4,17 @@ import { RouterTestingModule } from '@angular/router/testing';
 
 import { ButtonModule, CardModule, FormModule, GridModule } from '@coreui/angular';
 import { IconSetService } from '@coreui/icons-angular';
-import { iconSubset } from '../../../icons/icon-subset';
-import { DocsComponentsModule } from '../../../../components';
-import { FormControlsComponent } from './form-controls.component';
+import { ManageSubmissionsComponent } from './manage-submissions.component';
 
-describe('FormControlsComponent', () => {
-  let component: FormControlsComponent;
-  let fixture: ComponentFixture<FormControlsComponent>;
+describe('ManageSubmissionsComponent', () => {
+  let component: ManageSubmissionsComponent;
+  let fixture: ComponentFixture<ManageSubmissionsComponent>;
   let iconSetService: IconSetService;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [FormControlsComponent],
-      imports: [CardModule, GridModule, FormsModule, FormModule, ButtonModule, DocsComponentsModule, RouterTestingModule],
+      declarations: [ManageSubmissionsComponent],
+      imports: [CardModule, GridModule, FormsModule, FormModule, ButtonModule, RouterTestingModule],
       providers: [IconSetService]
     })
       .compileComponents();
@@ -24,9 +22,8 @@ describe('FormControlsComponent', () => {
 
   beforeEach(() => {
     iconSetService = TestBed.inject(IconSetService);
-    iconSetService.icons = { ...iconSubset };
 
-    fixture = TestBed.createComponent(FormControlsComponent);
+    fixture = TestBed.createComponent(ManageSubmissionsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
