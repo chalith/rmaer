@@ -4,19 +4,17 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { ButtonGroupModule, ButtonModule, CardModule, DropdownModule, FormModule, GridModule } from '@coreui/angular';
 import { IconSetService } from '@coreui/icons-angular';
-import { iconSubset } from '../../../icons/icon-subset';
-import { DocsComponentsModule } from '../../../../components';
-import { ButtonGroupsComponent } from './button-groups.component';
+import { AssignJudgesComponent } from './assign-judges.component';
 
-describe('ButtonGroupsComponent', () => {
-  let component: ButtonGroupsComponent;
-  let fixture: ComponentFixture<ButtonGroupsComponent>;
+describe('AssignJudgesComponent', () => {
+  let component: AssignJudgesComponent;
+  let fixture: ComponentFixture<AssignJudgesComponent>;
   let iconSetService: IconSetService;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ButtonGroupsComponent],
-      imports: [ReactiveFormsModule, ButtonModule, DropdownModule, FormModule, DocsComponentsModule, GridModule, CardModule, RouterTestingModule, ButtonModule, ButtonGroupModule],
+      declarations: [AssignJudgesComponent],
+      imports: [ReactiveFormsModule, ButtonModule, DropdownModule, FormModule, GridModule, CardModule, RouterTestingModule, ButtonModule, ButtonGroupModule],
       providers: [IconSetService]
     })
       .compileComponents();
@@ -24,9 +22,8 @@ describe('ButtonGroupsComponent', () => {
 
   beforeEach(() => {
     iconSetService = TestBed.inject(IconSetService);
-    iconSetService.icons = { ...iconSubset };
 
-    fixture = TestBed.createComponent(ButtonGroupsComponent);
+    fixture = TestBed.createComponent(AssignJudgesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -21,7 +21,10 @@ export class RegisterComponent {
 
   submit() {
     this.userDto.userName = this.userDto.email;
-    if (this.userDto.password !== this.retypePassword) {
+    if (!this.userDto.firstName || !this.userDto.lastName ||
+      !this.userDto.email || !this.userDto.password)
+      alert('Register info cannot be empty!');
+    else if (this.userDto.password !== this.retypePassword) {
       alert('Password missmatch!');
       return;
     }

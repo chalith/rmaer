@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'app-button-groups',
-  templateUrl: './button-groups.component.html',
-  styleUrls: ['./button-groups.component.scss']
+  selector: 'app-assign-judges',
+  templateUrl: './assign-judges.component.html',
+  styleUrls: ['./assign-judges.component.scss']
 })
-export class ButtonGroupsComponent {
+export class AssignJudgesComponent {
 
   formCheck1 = this.formBuilder.group({
     checkbox1: false,

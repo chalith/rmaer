@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-accordions',
-  templateUrl: './accordions.component.html',
-  styleUrls: ['./accordions.component.scss']
+  selector: 'app-manage-event',
+  templateUrl: './manage-event.component.html',
+  styleUrls: ['./manage-event.component.scss']
 })
-export class AccordionsComponent {
+export class ManageEventComponent {
 
   items = [1, 2, 3, 4];
 

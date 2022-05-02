@@ -3,28 +3,25 @@ import { RouterTestingModule } from '@angular/router/testing';
 
 import { BreadcrumbModule, CardModule, GridModule } from '@coreui/angular';
 import { IconSetService } from '@coreui/icons-angular';
-import { iconSubset } from '../../../icons/icon-subset';
-import { DocsComponentsModule } from '../../../../components';
-import { BreadcrumbsComponent } from './breadcrumbs.component';
+import { AwardCategoriesComponent } from './award-categories.component';
 
-describe('BreadcrumbsComponent', () => {
-  let component: BreadcrumbsComponent;
-  let fixture: ComponentFixture<BreadcrumbsComponent>;
+describe('AwardCategoriesComponent', () => {
+  let component: AwardCategoriesComponent;
+  let fixture: ComponentFixture<AwardCategoriesComponent>;
   let iconSetService: IconSetService;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [BreadcrumbsComponent],
-      imports: [CardModule, GridModule, BreadcrumbModule, RouterTestingModule, DocsComponentsModule],
+      declarations: [AwardCategoriesComponent],
+      imports: [CardModule, GridModule, BreadcrumbModule, RouterTestingModule],
       providers: [IconSetService]
     }).compileComponents();
   }));
 
   beforeEach(() => {
     iconSetService = TestBed.inject(IconSetService);
-    iconSetService.icons = { ...iconSubset };
 
-    fixture = TestBed.createComponent(BreadcrumbsComponent);
+    fixture = TestBed.createComponent(AwardCategoriesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

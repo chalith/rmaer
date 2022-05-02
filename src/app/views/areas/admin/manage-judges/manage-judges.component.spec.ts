@@ -4,19 +4,17 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { ButtonModule, CardModule, GridModule } from '@coreui/angular';
 import { IconModule } from '@coreui/icons-angular';
 import { IconSetService } from '@coreui/icons-angular';
-import { iconSubset } from '../../../icons/icon-subset';
-import { DocsComponentsModule } from '../../../../components';
-import { ButtonsComponent } from './buttons.component';
+import { ManageJudgesComponent } from './manage-judges.component';
 
-describe('ButtonsComponent', () => {
-  let component: ButtonsComponent;
-  let fixture: ComponentFixture<ButtonsComponent>;
+describe('ManageJudgesComponent', () => {
+  let component: ManageJudgesComponent;
+  let fixture: ComponentFixture<ManageJudgesComponent>;
   let iconSetService: IconSetService
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ButtonsComponent ],
-      imports: [CardModule, GridModule, ButtonModule, RouterTestingModule, IconModule, DocsComponentsModule],
+      declarations: [ ManageJudgesComponent ],
+      imports: [CardModule, GridModule, ButtonModule, RouterTestingModule, IconModule],
       providers: [IconSetService]
     })
     .compileComponents();
@@ -24,9 +22,8 @@ describe('ButtonsComponent', () => {
 
   beforeEach(() => {
     iconSetService = TestBed.inject(IconSetService);
-    iconSetService.icons = { ...iconSubset };
 
-    fixture = TestBed.createComponent(ButtonsComponent);
+    fixture = TestBed.createComponent(ManageJudgesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

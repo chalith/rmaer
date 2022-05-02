@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-buttons',
-  templateUrl: './buttons.component.html',
-  styleUrls: ['./buttons.component.scss']
+  selector: 'app-manage-judges',
+  templateUrl: './manage-judges.component.html',
+  styleUrls: ['./manage-judges.component.scss']
 })
-export class ButtonsComponent {
+export class ManageJudgesComponent {
 
   states = ['normal', 'active', 'disabled'];
   colors = ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark'];

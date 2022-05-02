@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  templateUrl: './breadcrumbs.component.html',
-  styleUrls: ['./breadcrumbs.component.scss']
+  templateUrl: './award-categories.component.html',
+  styleUrls: ['./award-categories.component.scss']
 })
-export class BreadcrumbsComponent implements OnInit {
+export class AwardCategoriesComponent implements OnInit {
   public items = <any>[];
 
   constructor() {}

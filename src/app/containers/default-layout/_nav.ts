@@ -9,31 +9,31 @@ export const navItems: INavData[] = [
 
   {
     name: 'Manage Event',
-    url: '/base',
+    url: '/areas',
     iconComponent: { name: 'cil-puzzle' },
     children: [
       {
         name: 'Event Details',
-        url: '/base/accordion'
+        url: '/areas/manage-event'
       },
       {
         name: 'Award Categories',
-        url: '/base/breadcrumbs'
+        url: '/areas/award-categories'
       }
     ]
   },
   {
     name: 'Manage Judging',
-    url: '/buttons',
+    url: '/areas',
     iconComponent: { name: 'cil-star' },
     children: [
       {
         name: 'Judges',
-        url: '/buttons/buttons'
+        url: '/areas/manage-judges'
       },
       {
         name: 'Assign Judges',
-        url: '/buttons/button-groups'
+        url: '/areas/assign-judges'
       }
     ]
   },

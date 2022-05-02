@@ -34,8 +34,6 @@ import { IconModule } from '@coreui/icons-angular';
 import { DocsComponentsModule } from '@docs-components/docs-components.module';
 
 // views
-import { AccordionsComponent } from './accordion/accordions.component';
-import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { CardsComponent } from './cards/cards.component';
 import { CarouselsComponent } from './carousels/carousels.component';
 import { CollapsesComponent } from './collapses/collapses.component';
@@ -85,8 +83,6 @@ import { BaseRoutingModule } from './base-routing.module';
     DocsComponentsModule,
   ],
   declarations: [
-    AccordionsComponent,
-    BreadcrumbsComponent,
     CardsComponent,
     CarouselsComponent,
     CollapsesComponent,

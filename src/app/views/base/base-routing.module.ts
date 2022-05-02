@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { AccordionsComponent } from './accordion/accordions.component';
-import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { CardsComponent } from './cards/cards.component';
 import { CarouselsComponent } from './carousels/carousels.component';
 import { CollapsesComponent } from './collapses/collapses.component';
@@ -27,20 +25,6 @@ const routes: Routes = [
       {
         path: '',
         redirectTo: 'cards',
-      },
-      {
-        path: 'accordion',
-        component: AccordionsComponent,
-        data: {
-          title: 'Accordion',
-        },
-      },
-      {
-        path: 'breadcrumbs',
-        component: BreadcrumbsComponent,
-        data: {
-          title: 'Breadcrumbs',
-        },
       },
       {
         path: 'cards',
