@@ -20,8 +20,11 @@ import {
   NavbarModule,
   NavModule,
   SharedModule,
+  TableModule,
   UtilitiesModule
 } from '@coreui/angular';
+
+import { TablesComponent } from '../base/tables/tables.component';
 
 import { IconModule } from '@coreui/icons-angular';
 
@@ -30,6 +33,7 @@ import { IconModule } from '@coreui/icons-angular';
     ButtonsComponent,
     ButtonGroupsComponent,
     DropdownsComponent,
+    
   ],
   imports: [
     CommonModule,
@@ -48,6 +52,7 @@ import { IconModule } from '@coreui/icons-angular';
     NavbarModule,
     CollapseModule,
     NavModule,
+    TableModule,
     NavbarModule
   ]
 })
