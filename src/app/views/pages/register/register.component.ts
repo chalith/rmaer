@@ -22,18 +22,18 @@ export class RegisterComponent {
   submit() {
     this.userDto.userName = this.userDto.email;
     if (!this.userDto.firstName || !this.userDto.lastName ||
-      !this.userDto.email || !this.userDto.password)
+      !this.userDto.email || !this.userDto.password) {
       alert('Register info cannot be empty!');
+      return;
+    }
     else if (this.userDto.password !== this.retypePassword) {
       alert('Password missmatch!');
       return;
     }
 
     this.userService.register(this.userDto).subscribe(data => {
-      if (data)
-        this.router.navigateByUrl('/login')
-      else
-        alert('Error occured while registration!');
+      alert('User registration successful!');
+      this.router.navigateByUrl('/login');
     })
   }
 }

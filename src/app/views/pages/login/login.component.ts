@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { LoginDto } from 'src/dtos/login-dto';
+import { AuthResultDto } from 'src/dtos/auth-result-dto';
 import { AuthService } from 'src/services/auth.service';
 
 @Component({
@@ -18,12 +19,16 @@ export class LoginComponent {
   }
 
   login() {
-    if (!this.loginDto.userName || !this.loginDto.password)
+    if (!this.loginDto.userName || !this.loginDto.password) {
       alert('Login info cannot be empty!');
+      return;
+    }
 
-    this.authService.login(this.loginDto).subscribe(data => {
+    this.authService.login(this.loginDto).subscribe((data) => {
       if (data) {
-        localStorage.setItem('jwt', data.toString())
+        let res: AuthResultDto;
+        res = data as AuthResultDto;
+        localStorage.setItem('jwt', res.token)
         this.router.navigateByUrl('');
       }
       else
