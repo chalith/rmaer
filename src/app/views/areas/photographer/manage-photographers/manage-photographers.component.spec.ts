@@ -4,19 +4,17 @@ import { RouterTestingModule } from '@angular/router/testing';
 
 import { AlertModule, ButtonModule, CardModule, GridModule } from '@coreui/angular';
 import { IconSetService } from '@coreui/icons-angular';
-import { iconSubset } from '../../../icons/icon-subset';
-import { DocsComponentsModule } from '../../../../components';
-import { AlertsComponent } from './alerts.component';
+import { ManagePhotographersComponent } from './manage-photographers.component';
 
-describe('AlertsComponent', () => {
-  let component: AlertsComponent;
-  let fixture: ComponentFixture<AlertsComponent>;
+describe('ManagePhotographersComponent', () => {
+  let component: ManagePhotographersComponent;
+  let fixture: ComponentFixture<ManagePhotographersComponent>;
   let iconSetService: IconSetService;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [AlertsComponent],
-      imports: [AlertModule, ButtonModule, NoopAnimationsModule, GridModule, CardModule, DocsComponentsModule, RouterTestingModule],
+      declarations: [ManagePhotographersComponent],
+      imports: [AlertModule, ButtonModule, NoopAnimationsModule, GridModule, CardModule, RouterTestingModule],
       providers: [IconSetService]
     })
       .compileComponents();
@@ -24,9 +22,8 @@ describe('AlertsComponent', () => {
 
   beforeEach(() => {
     iconSetService = TestBed.inject(IconSetService);
-    iconSetService.icons = { ...iconSubset };
 
-    fixture = TestBed.createComponent(AlertsComponent);
+    fixture = TestBed.createComponent(ManagePhotographersComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

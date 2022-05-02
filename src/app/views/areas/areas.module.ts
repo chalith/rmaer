@@ -40,6 +40,7 @@ import { AwardCategoriesComponent } from './admin/award-categories/award-categor
 import { ManageJudgesComponent } from './admin/manage-judges/manage-judges.component';
 import { AssignJudgesComponent } from './admin/assign-judges/assign-judges.component';
 import { ManageSubmissionsComponent } from './contestant/manage-submissions/manage-submissions.component';
+import { ManagePhotographersComponent } from './photographer/manage-photographers/manage-photographers.component';
 
 @NgModule({
   imports: [
@@ -78,7 +79,8 @@ import { ManageSubmissionsComponent } from './contestant/manage-submissions/mana
     AwardCategoriesComponent,
     ManageJudgesComponent,
     AssignJudgesComponent,
-    ManageSubmissionsComponent
+    ManageSubmissionsComponent,
+    ManagePhotographersComponent
   ],
 })
 export class AreasModule { }

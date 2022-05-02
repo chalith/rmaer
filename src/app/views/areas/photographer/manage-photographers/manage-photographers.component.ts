@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-alerts',
-  templateUrl: './alerts.component.html',
-  styleUrls: ['./alerts.component.scss']
+  selector: 'app-manage-photographers',
+  templateUrl: './manage-photographers.component.html',
+  styleUrls: ['./manage-photographers.component.scss']
 })
-export class AlertsComponent implements OnInit {
+export class ManagePhotographersComponent implements OnInit {
 
   visible = [true, true];
   dismissible = true;

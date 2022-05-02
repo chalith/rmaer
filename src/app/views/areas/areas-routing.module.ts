@@ -6,6 +6,7 @@ import { AwardCategoriesComponent } from './admin/award-categories/award-categor
 import { ManageEventComponent } from './admin/manage-event/manage-event.component';
 import { ManageJudgesComponent } from './admin/manage-judges/manage-judges.component';
 import { ManageSubmissionsComponent } from './contestant/manage-submissions/manage-submissions.component';
+import { ManagePhotographersComponent } from './photographer/manage-photographers/manage-photographers.component';
 
 const routes: Routes = [
   {
@@ -47,6 +48,13 @@ const routes: Routes = [
         component: ManageSubmissionsComponent,
         data: {
           title: 'Manage Submissions',
+        },
+      },
+      {
+        path: 'manage-photographers',
+        component: ManagePhotographersComponent,
+        data: {
+          title: 'Manage photographers',
         },
       },
     ],

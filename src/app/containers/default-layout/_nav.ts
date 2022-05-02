@@ -50,12 +50,12 @@ export const navItems: INavData[] = [
   },
   {
     name: 'Manage Photographers',
-    url: '/notifications',
+    url: '/areas',
     iconComponent: { name: 'cil-user' },
     children: [
       {
         name: ' Photographers',
-        url: '/notifications/alerts'
+        url: '/areas/manage-photographers'
       }
     ]
   },
